@@ -1,3 +1,10 @@
+---
+layout: default
+title: Using Registries
+parent: Registries
+nav_order: 6
+---
+
 # Using Registries
 
 Hytale uses a Registry system to manage game content like Blocks, Entities, and Assets.

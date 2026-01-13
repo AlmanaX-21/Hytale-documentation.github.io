@@ -1,3 +1,9 @@
+---
+layout: default
+title: Threading Model
+parent: Architecture
+nav_order: 2
+---
 
 # Server Threading Model
 

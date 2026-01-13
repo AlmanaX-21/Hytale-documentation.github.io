@@ -1,3 +1,9 @@
+---
+layout: default
+title: Plugin API
+parent: Modding
+nav_order: 1
+---
 
 # Hytale Plugin API
 

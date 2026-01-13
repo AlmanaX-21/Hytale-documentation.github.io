@@ -1,3 +1,10 @@
+---
+layout: default
+title: Item Registry
+parent: Registries
+nav_order: 4
+---
+
 # Item Registry
 
 Items in Hytale are primarily data-driven assets defined in JSON. The Item Registry is part of the broader Asset System.

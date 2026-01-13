@@ -1,3 +1,9 @@
+---
+layout: default
+title: Runtime & Sandbox
+parent: Modding
+nav_order: 3
+---
 
 # Plugin Runtime & Sandbox
 

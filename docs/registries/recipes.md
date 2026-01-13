@@ -1,3 +1,10 @@
+---
+layout: default
+title: Recipe Registry
+parent: Registries
+nav_order: 5
+---
+
 # Recipe Registry
 
 Crafting Recipes in Hytale are defined as JSON assets. They link input items to output items and specify the crafting station (Bench) requirements.

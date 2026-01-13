@@ -1,3 +1,9 @@
+---
+layout: default
+title: Overview
+parent: Registries
+nav_order: 1
+---
 
 # Hytale Registries
 

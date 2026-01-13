@@ -1,0 +1,15 @@
+/* Custom SCSS overrides */
+
+// Example: Enhance table visualization
+table {
+  display: table;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+// Adjust mermaid background in dark mode if necessary
+:root[data-theme="dark"] .mermaid {
+  background-color: #2b2b2b;
+  padding: 10px;
+  border-radius: 4px;
+}

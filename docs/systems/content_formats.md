@@ -1,3 +1,9 @@
+---
+layout: default
+title: Content Formats
+parent: Systems
+nav_order: 3
+---
 
 # Hytale Content Formats (JSON Schemas)
 

@@ -1,0 +1,20 @@
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const config = {
+      startOnLoad: true,
+      theme: 'default',
+      securityLevel: 'loose',
+    };
+
+    // Check user preference or site theme
+    // just-the-docs stores theme in localStorage 'jtd-color-scheme'
+    const currentTheme = localStorage.getItem('jtd-color-scheme') || 'default';
+    
+    if (currentTheme === 'dark' || (currentTheme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        config.theme = 'dark';
+    }
+
+    mermaid.initialize(config);
+  });
+</script>

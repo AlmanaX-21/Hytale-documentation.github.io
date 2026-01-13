@@ -1,3 +1,10 @@
+---
+layout: default
+title: Block Registry
+parent: Registries
+nav_order: 2
+---
+
 # Block Registry
 
 The Block Registry system in Hytale handles the definition and lifecycle of blocks in the world. It is a dual-system consisting of:

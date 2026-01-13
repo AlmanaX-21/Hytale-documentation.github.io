@@ -1,3 +1,9 @@
+---
+layout: default
+title: Boot Sequence
+parent: Architecture
+nav_order: 1
+---
 
 # Hytale Server Boot Sequence
 
@@ -71,10 +77,10 @@ graph TD
     E --> F[Load Config]
     E --> G[Init Netty & Auth]
     E --> H[Register Core Plugins]
-    H --> I[HytaleServer.boot()]
-    I --> J[PluginManager.setup()]
+    H --> I["HytaleServer.boot()"]
+    I --> J["PluginManager.setup()"]
     J --> K[LoadAssetEvent]
-    K --> L[PluginManager.start()]
+    K --> L["PluginManager.start()"]
     L --> M[Universe Ready]
     M --> N[Bind Network Port]
     N --> O[BootEvent]

@@ -1,3 +1,10 @@
+---
+layout: default
+title: Command System
+parent: Systems
+nav_order: 5
+---
+
 # Command System
 
 The Command System allows plugins to register custom commands that players or the console can execute.

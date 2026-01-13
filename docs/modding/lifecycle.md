@@ -1,3 +1,10 @@
+---
+layout: default
+title: Plugin Lifecycle
+parent: Modding
+nav_order: 2
+---
+
 # Plugin Lifecycle
 
 All Hytale server plugins must extend the `com.hypixel.hytale.server.core.plugin.PluginBase` class. This class provides the hook points for the server's lifecycle events.

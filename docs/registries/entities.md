@@ -1,3 +1,10 @@
+---
+layout: default
+title: Entity Registry
+parent: Registries
+nav_order: 3
+---
+
 # Entity Registry
 
 The Entity Registry manages the definitions of dynamic game objects (Players, Monsters, Projectiles). Hytale's entity system is heavily integrated with its ECS (Entity Component System) architecture.

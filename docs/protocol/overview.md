@@ -1,3 +1,9 @@
+---
+layout: default
+title: Network Protocol
+parent: Protocol
+nav_order: 1
+---
 
 # Hytale Network Protocol
 

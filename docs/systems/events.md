@@ -1,3 +1,10 @@
+---
+layout: default
+title: Event System
+parent: Systems
+nav_order: 4
+---
+
 # Event System
 
 The Hytale Event System enables plugins to react to actions within the server. It is built around the `EventBus` and `EventRegistry`.

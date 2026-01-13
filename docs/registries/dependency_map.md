@@ -1,3 +1,10 @@
+---
+layout: default
+title: Dependency Map
+parent: Registries
+nav_order: 7
+---
+
 # Registry Dependency Map
 
 This graph visualizes the relationships between Hytale's core registries and asset systems.
@@ -20,9 +27,9 @@ graph TD
     SoundAsset[Sound Event]
     
     %% Runtime Components
-    BlockState[BlockState (Runtime)]
-    Entity[Entity (Runtime)]
-    ItemStack[ItemStack (Runtime)]
+    BlockState["BlockState (Runtime)"]
+    Entity["Entity (Runtime)"]
+    ItemStack["ItemStack (Runtime)"]
 
     %% Relationships
     AssetRegistry -->|Loads| ItemAsset

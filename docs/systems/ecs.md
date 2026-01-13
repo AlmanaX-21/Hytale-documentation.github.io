@@ -1,3 +1,9 @@
+---
+layout: default
+title: ECS Architecture
+parent: Systems
+nav_order: 1
+---
 
 # Entity Component System (ECS) Architecture
 
