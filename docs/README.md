@@ -12,12 +12,16 @@ This directory contains a comprehensive technical analysis of the Hytale Server 
 
 ## Registry System
 *   [Registries Overview](registries/overview.md): How the game registers content (Blocks, Items, Entities).
+*   [Using Registries](registries/usage.md): Code examples for registering content.
 
 ## Modding & Plugins
 *   [Plugin API](modding/plugin_api.md): How plugins are structured and accessed.
+*   [Plugin Lifecycle](modding/lifecycle.md): Setup, Start, and Shutdown methods.
 *   [Runtime Environment](modding/runtime_sandbox.md): Classloading and security for plugins.
 
 ## Game Systems
 *   [ECS Architecture](systems/ecs.md): Data-oriented Entity Component System analysis.
 *   [World Management](systems/world_management.md): Chunk loading, generation, and world hierarchy.
 *   [Content Formats](systems/content_formats.md): JSON schemas for Blocks, Items, and Recipes.
+*   [Event System](systems/events.md): Handling functionality via EventBus.
+*   [Command System](systems/commands.md): Registering and executing commands.
