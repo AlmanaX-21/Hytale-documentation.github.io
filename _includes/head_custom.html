@@ -1,20 +1,105 @@
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  // Enhanced Mermaid configuration with theme switching
+  function initMermaid() {
+    const colorScheme = jtd.getTheme();
+    const isDark = colorScheme === 'dark' ||
+      (colorScheme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
     const config = {
       startOnLoad: true,
-      theme: 'default',
+      theme: isDark ? 'dark' : 'default',
       securityLevel: 'loose',
+      fontFamily: 'inherit',
+      themeVariables: {
+        fontSize: '16px'
+      }
     };
 
-    // Check user preference or site theme
-    // just-the-docs stores theme in localStorage 'jtd-color-scheme'
-    const currentTheme = localStorage.getItem('jtd-color-scheme') || 'default';
-    
-    if (currentTheme === 'dark' || (currentTheme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        config.theme = 'dark';
-    }
-
     mermaid.initialize(config);
+
+    // Re-render diagrams when theme changes
+    if (mermaid.contentLoaded) {
+      mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+    }
+  }
+
+  // Initialize when DOM is ready
+  document.addEventListener("DOMContentLoaded", function () {
+    initMermaid();
+
+    // Listen for theme changes
+    jtd.addEvent(document, 'jtd:theme', function () {
+      initMermaid();
+    });
   });
 </script>
+
+<script>
+  // Scroll-to-top button functionality
+  document.addEventListener("DOMContentLoaded", function () {
+    // Create scroll-to-top button if it doesn't exist
+    if (!document.querySelector('.back-to-top-custom')) {
+      const backToTop = document.createElement('button');
+      backToTop.className = 'back-to-top back-to-top-custom';
+      backToTop.innerHTML = '↑ Top';
+      backToTop.setAttribute('aria-label', 'Scroll to top');
+      document.body.appendChild(backToTop);
+
+      // Show/hide based on scroll position
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 300) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      });
+
+      // Scroll to top on click
+      backToTop.addEventListener('click', function () {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+  });
+</script>
+
+<style>
+  /* Additional inline styles for immediate effect */
+  .back-to-top-custom {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--btn-primary-color, #007bff);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+  }
+
+  .back-to-top-custom.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .back-to-top-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Theme-specific button colors */
+  [data-theme="dark"] .back-to-top-custom {
+    background: #5c6bc0;
+  }
+</style>
