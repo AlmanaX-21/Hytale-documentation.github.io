@@ -28,5 +28,7 @@ This directory contains a comprehensive technical analysis of the Hytale Server 
 *   [ECS Architecture](systems/ecs.md): Data-oriented Entity Component System analysis.
 *   [World Management](systems/world_management.md): Chunk loading, generation, and world hierarchy.
 *   [Content Formats](systems/content_formats.md): JSON schemas for Blocks, Items, and Recipes.
+*   [Movement States](systems/movement_states.md): Player movement tracking and physics on the server.
+*   [Interaction System](systems/interactions.md): Data-driven player actions and effects.
 *   [Event System](systems/events.md): Handling functionality via EventBus.
 *   [Command System](systems/commands.md): Registering and executing commands.

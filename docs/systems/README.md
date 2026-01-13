@@ -7,4 +7,4 @@ has_children: true
 
 # Game Systems
 
-Documentation on the Hytale ECS architecture, world management, events, commands, and content formats.
+Documentation on the Hytale ECS architecture, world management, player input (movement and interactions), events, commands, and content formats.
