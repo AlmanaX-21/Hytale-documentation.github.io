@@ -8,6 +8,12 @@ nav_order: 1
 
 This directory contains a comprehensive technical analysis of the Hytale Server source code.
 
+## Community & Resources
+
+*   **[Join our Discord](https://discord.gg/qm6rvYEXkX)** - Get help, share your plugins, and discuss Hytale modding
+*   **[Plugin Template](https://almanax-21.github.io/Hytale-documentation.github.io/)** - Quick-start template for creating Hytale plugins
+
+
 ## Architecture
 *   [Boot Sequence](architecture/boot_sequence.md): Analysis of the server startup process.
 *   [Threading Model](architecture/threading_model.md): Overview of threads and concurrency.
@@ -30,5 +36,6 @@ This directory contains a comprehensive technical analysis of the Hytale Server 
 *   [Content Formats](systems/content_formats.md): JSON schemas for Blocks, Items, and Recipes.
 *   [Movement States](systems/movement_states.md): Player movement tracking and physics on the server.
 *   [Interaction System](systems/interactions.md): Data-driven player actions and effects.
+*   [Tick System](systems/tick_system.md): Core game loop driving all time-based updates.
 *   [Event System](systems/events.md): Handling functionality via EventBus.
 *   [Command System](systems/commands.md): Registering and executing commands.
