@@ -1,10 +1,13 @@
 title: Hytale Server Analysis
 description: Comprehensive technical analysis of the Hytale Server source code.
-theme: just-the-docs/just-the-docs
-url: "https://kanishq.github.io/Hytale-documentation" # Start with a placeholder or relative
-baseurl: "/Hytale-documentation"      # Adjust depending on repo name
+remote_theme: just-the-docs/just-the-docs
+url: "https://almanax-21.github.io"
+baseurl: "/Hytale-documentation.github.io"
 
-logo: "/assets/images/logo.png" # Optional: Add a logo later if available
+# GitHub Pages will serve from /docs folder
+# Make sure to set this in repository settings
+
+logo: "/Hytale-documentation.github.io/assets/images/logo.png"
 
 aux_links:
   "GitHub Repository":
@@ -27,3 +30,4 @@ mermaid:
 
 # Footer
 footer_content: "Hytale Server Analysis - Unofficial Documentation"
+

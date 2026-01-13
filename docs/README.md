@@ -1,9 +1,3 @@
----
-layout: default
-title: Home
-nav_order: 1
----
-
 # Hytale Server Source Analysis
 
 This directory contains a comprehensive technical analysis of the Hytale Server source code.
